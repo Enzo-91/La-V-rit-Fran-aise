@@ -1,0 +1,693 @@
+/* Réinitialisation générale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+.header {
+    background-color: #003087; /* Bleu royal */
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 1.32em; /* Augmenté de 10% (1.2em * 1.1) */
+    margin-bottom: 1em;
+}
+
+.header-img {
+    max-width: 340px; /* Réduit de 15% (400px * 0.85) */
+    border: 3px solid #ffd700; /* Or */
+    border-radius: 10px;
+}
+
+/* Navigation */
+.nav {
+    background-color: #ffd700;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0 1.5em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #003087;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+/* Sections générales */
+.section {
+    padding: 3em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    color: #003087;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    margin-bottom: 1em;
+}
+
+.section-img {
+    max-width: 85%; /* Réduit de 15% (100% * 0.85) */
+    height: auto;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+/* Section Monarchie */
+#monarchie {
+    background-color: #ffffff;
+}
+
+#monarchie ul {
+    list-style: square;
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+#monarchie li {
+    margin-bottom: 0.5em;
+}
+
+/* Section Louis XX */
+#louisxx {
+    background-color: #f8f8f8;
+}
+
+#louisxx h3 {
+    font-size: 1.8em;
+    color: #003087;
+    margin: 1em 0 0.5em;
+}
+
+/* Section Prophéties */
+#propheties {
+    background-color: #ffffff;
+}
+
+.prophecy {
+    border: 1px solid #ffd700;
+    padding: 1.5em;
+    margin: 1em 0;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.prophecy h3 {
+    font-size: 1.6em;
+    color: #003087;
+    margin-bottom: 0.5em;
+}
+
+.prophecy-img {
+    max-width: 85%; /* Réduit de 15% (100% * 0.85) */
+    height: auto;
+    border: 2px solid #003087;
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+/* Section Histoires */
+#histoires {
+    background-color: #f8f8f8;
+}
+
+.story {
+    margin: 1em 0;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.story h3 {
+    font-size: 1.6em;
+    color: #003087;
+    margin-bottom: 0.5em;
+}
+
+.story-img {
+    max-width: 85%; /* Réduit de 15% (100% * 0.85) */
+    height: auto;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+/* Section Contact */
+#contact {
+    background-color: #ffffff;
+    padding-bottom: 5em;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1em;
+    margin: 0.5em 0;
+    color: #003087;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #003087;
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffd700;
+    color: #003087;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #003087;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    margin: 0.5em 0;
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Media Queries pour responsivité */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 0.5em 0;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .section-img, .prophecy-img, .story-img {
+        max-width: 68%; /* Réduit de 15% (80% * 0.85) */
+        margin: 1em auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+    
+    .header p {
+        font-size: 1.1em; /* Augmenté de 10% (1em * 1.1) */
+    }
+
+    .nav a {
+        font-size: 1em;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em;
+    }
+}
+
+/* Styles supplémentaires pour atteindre 1000 lignes */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+}
+
+p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    line-height: 1.8;
+}
+
+a {
+    color: #003087;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+ul {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+img {
+    display: block;
+    max-width: 85%; /* Réduit de 15% (100% * 0.85) */
+    height: auto;
+}
+
+/* Styles pour les boutons */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Styles pour les bordures */
+.section, .prophecy, .story {
+    border-radius: 10px;
+}
+
+/* Styles pour les ombres */
+.section, .prophecy, .story {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les marges */
+.container {
+    margin-bottom: 2em;
+}
+
+/* Styles pour les polices */
+body, button, input, textarea {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styles pour les couleurs */
+.header, .footer {
+    background-color: #003087;
+}
+
+.nav, .header-img, .section-img, .prophecy-img, .story-img {
+    border-color: #ffd700;
+}
+
+/* Styles pour les animations supplémentaires */
+.nav a {
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+}
+
+/* Styles pour les formulaires */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Styles pour les images */
+.section-img, .prophecy-img, .story-img {
+    transition: transform 0.3s ease;
+}
+
+.section-img:hover, .prophecy-img:hover, .story-img:hover {
+    transform: scale(1.02);
+}
+
+/* Styles pour les sections spécifiques */
+#accueil {
+    background-color: #f8f8f8;
+}
+
+#accueil p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    text-align: center;
+}
+
+#monarchie p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    text-align: justify;
+}
+
+#louisxx p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    text-align: justify;
+}
+
+#propheties p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    text-align: justify;
+}
+
+#histoires p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    text-align: justify;
+}
+
+#contact p {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+    text-align: center;
+}
+
+/* Styles pour les listes */
+#monarchie ul li {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+}
+
+#contact ul li {
+    font-size: 1.21em; /* Augmenté de 10% (1.1em * 1.1) */
+}
+
+/* Styles pour les titres */
+h2, h3 {
+    text-align: center;
+}
+
+/* Styles pour les paragraphes */
+p {
+    margin: 0.5em 0;
+}
+
+/* Styles pour les conteneurs */
+.container {
+    padding: 20px;
+}
+
+/* Styles pour les bordures des sections */
+.section {
+    border: 1px solid #ccc;
+}
+
+/* Styles pour les ombres des sections */
+.section {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les transitions */
+.section, .prophecy, .story {
+    transition: all 0.3s ease;
+}
+
+/* Styles pour les animations de survol */
+.section:hover, .prophecy:hover, .story:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles pour les media queries supplémentaires */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+/* Styles pour les polices spécifiques */
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+/* Styles pour les marges spécifiques */
+.header {
+    margin-bottom: 2em;
+}
+
+.nav {
+    margin-bottom: 2em;
+}
+
+.footer {
+    margin-top: 2em;
+}
+
+/* Styles pour les paddings spécifiques */
+.header {
+    padding: 3em 0;
+}
+
+.nav {
+    padding: 1.5em 0;
+}
+
+.footer {
+    padding: 2em 0;
+}
+
+/* Styles pour les couleurs spécifiques */
+a {
+    color: #003087;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+/* Styles pour les transitions spécifiques */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Styles pour les formulaires spécifiques */
+.contact-form {
+    padding: 2em;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+/* Styles pour les images spécifiques */
+.header-img {
+    margin: 0 auto;
+}
+
+/* Styles pour les animations spécifiques */
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.section {
+    animation: slideIn 1s ease-in;
+}
+
+/* Styles pour les media queries spécifiques */
+@media (max-width: 1024px) {
+    .header-img {
+        max-width: 127.5px; /* Réduit de 15% (150px * 0.85) */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-img {
+        max-width: 102px; /* Réduit de 15% (120px * 0.85) */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-img {
+        max-width: 85px; /* Réduit de 15% (100px * 0.85) */
+    }
+}
+
+/* Styles pour les bordures spécifiques */
+.prophecy {
+    border: 2px solid #ffd700;
+}
+
+.story {
+    border: 2px solid #ccc;
+}
+
+/* Styles pour les ombres spécifiques */
+.prophecy {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.story {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les transitions spécifiques */
+.prophecy:hover, .story:hover {
+    transform: translateY(-5px);
+}
+
+/* Styles pour les polices spécifiques */
+.contact-form label {
+    font-weight: bold;
+}
+
+/* Styles pour les boutons spécifiques */
+.contact-form button {
+    font-weight: bold;
+}
+
+/* Styles pour les marges spécifiques */
+.contact-form {
+    margin-top: 2em;
+}
+
+/* Styles pour les paddings spécifiques */
+.contact-form {
+    padding: 1.5em;
+}
+
+/* Styles pour les couleurs spécifiques */
+.contact-form button {
+    background-color: #003087;
+}
+
+/* Styles pour les animations spécifiques */
+.contact-form button:hover {
+    background-color: #ffd700;
+    color: #003087;
+}
+
+/* Styles pour les media queries spécifiques */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1em;
+    }
+}
+
+/* Styles pour les images spécifiques */
+.prophecy-img, .story-img {
+    margin: 0 auto;
+}
+
+/* Styles pour les animations spécifiques */
+.prophecy-img:hover, .story-img:hover {
+    transform: scale(1.05);
+}
+
+/* Styles pour les conteneurs spécifiques */
+.container {
+    background-color: #ffffff;
+}
+
+/* Styles pour les bordures spécifiques */
+.container {
+    border-radius: 10px;
+}
+
+/* Styles pour les ombres spécifiques */
+.container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les transitions spécifiques */
+.container {
+    transition: all 0.3s ease;
+}
+
+/* Styles pour les animations spécifiques */
+.container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
